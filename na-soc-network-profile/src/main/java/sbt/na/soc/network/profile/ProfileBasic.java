@@ -14,68 +14,24 @@ import java.util.Map;
 public class ProfileBasic extends ProfileObject {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProfileBasic.class);
 
-    private String _login;
-    private String _firstName;
-    private String _lastName;
-    private String _middleName;
-    private Long _sex;
-    private String _statusText;
-    private String _info;
-    private List<Long> _idCities;
+    private String login;
+    private String firstName;
+    private String lastName;
+    private String middleName;
+    private Long sex;
+    private String statusText;
+    private String info;
+    private List<Long> idCities;
     private Long idHomeCity;
-    private List<Long> _idLanguages;
-    private Long _idStatus;
-    private List<String> _basePhone;
+    private List<Long> idLanguages;
+    private Long idStatus;
+    private List<String> basePhone;
 
-    private List<Long> _idRoles;
-    private List<ContactInfo> _contactInfos;
-    private Map<String,String> _otherContacts;
-    private List<FieldOfActivity> _fieldOfActivities;
-    private List<Organization> _organizations;
-
-    public String get_login() {
-        return _login;
-    }
-
-    public void set_login(String _login) {
-        this._login = _login;
-    }
-
-    public List<Organization> get_organizations() {
-        return _organizations;
-    }
-
-    public void set_organizations(List<Organization> _organizations) {
-        this._organizations = _organizations;
-    }
-
-    public List<FieldOfActivity> get_fieldOfActivities() {
-        return _fieldOfActivities;
-    }
-
-    public void set_fieldOfActivities(List<FieldOfActivity> _fieldOfActivities) {
-        this._fieldOfActivities = _fieldOfActivities;
-    }
-
-    public Map<String, String> get_otherContacts() {
-        return _otherContacts;
-    }
-
-    public void set_otherContacts(Map<String, String> _otherContacts) {
-        this._otherContacts = _otherContacts;
-    }
-
-    public List<ContactInfo> getContactInfos() {
-        return _contactInfos;
-    }
-
-    public void setContactInfos(List<ContactInfo> contactInfos) {
-        this._contactInfos = contactInfos;
-    }
-
-    public void addContactInfo(ContactInfo contactInfo){
-        _contactInfos.add(contactInfo);
-    }
+    private List<Long> idRoles;
+    private List<ContactInfo> contactInfos;
+    private Map<String,String> otherContacts;
+    private List<FieldOfActivity> fieldOfActivities;
+    private List<Organization> organizations;
 
     public ProfileBasic() {
         super();
@@ -89,60 +45,104 @@ public class ProfileBasic extends ProfileObject {
         super(id, name, notes);
     }
 
-    public String get_firstName() {
-        return _firstName;
+    public String getLogin() {
+        return login;
     }
 
-    public void set_firstName(String _firstName) {
-        this._firstName = _firstName;
+    public void setLogin(String _login) {
+        this.login = _login;
     }
 
-    public String get_lastName() {
-        return _lastName;
+    public List<Organization> getOrganizations() {
+        return organizations;
     }
 
-    public void set_lastName(String _lastName) {
-        this._lastName = _lastName;
+    public void setOrganizations(List<Organization> organizations) {
+        this.organizations = organizations;
     }
 
-    public String get_middleName() {
-        return _middleName;
+    public List<FieldOfActivity> getFieldOfActivities() {
+        return fieldOfActivities;
     }
 
-    public void set_middleName(String _middleName) {
-        this._middleName = _middleName;
+    public void setFieldOfActivities(List<FieldOfActivity> fieldOfActivities) {
+        this.fieldOfActivities = fieldOfActivities;
     }
 
-    public Long get_sex() {
-        return _sex;
+    public Map<String, String> getOtherContacts() {
+        return otherContacts;
     }
 
-    public void set_sex(Long _sex) {
-        this._sex = _sex;
+    public void setOtherContacts(Map<String, String> otherContacts) {
+        this.otherContacts = otherContacts;
     }
 
-    public String get_statusText() {
-        return _statusText;
+    public List<ContactInfo> getContactInfos() {
+        return contactInfos;
     }
 
-    public void set_statusText(String _statusText) {
-        this._statusText = _statusText;
+    public void setContactInfos(List<ContactInfo> contactInfos) {
+        this.contactInfos = contactInfos;
     }
 
-    public String get_info() {
-        return _info;
+    public void addContactInfo(ContactInfo contactInfo){
+        contactInfos.add(contactInfo);
     }
 
-    public void set_info(String _info) {
-        this._info = _info;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
+    public Long getSex() {
+        return sex;
+    }
+
+    public void setSex(Long sex) {
+        this.sex = sex;
+    }
+
+    public String getStatusText() {
+        return statusText;
+    }
+
+    public void setStatusText(String statusText) {
+        this.statusText = statusText;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
     }
 
     public List<Long> getIdCities() {
-        return _idCities;
+        return idCities;
     }
 
     public void setIdCities(List<Long> idCities) {
-        this._idCities = idCities;
+        this.idCities = idCities;
     }
 
     public Long getIdhomeCity() {
@@ -154,34 +154,34 @@ public class ProfileBasic extends ProfileObject {
     }
 
     public List<Long> getIdLanguages() {
-        return _idLanguages;
+        return idLanguages;
     }
 
     public void setIdLanguages(List<Long> idLanguages) {
-        this._idLanguages = idLanguages;
+        this.idLanguages = idLanguages;
     }
 
     public Long getIdStatus() {
-        return _idStatus;
+        return idStatus;
     }
 
     public void setIdStatus(Long idStatus) {
-        this._idStatus = idStatus;
+        this.idStatus = idStatus;
     }
 
     public List<String> getBasePhone() {
-        return _basePhone;
+        return basePhone;
     }
 
     public void setBasePhone(List<String> basePhone) {
-        this._basePhone = basePhone;
+        this.basePhone = basePhone;
     }
 
     public List<Long> getIdRoles() {
-        return _idRoles;
+        return idRoles;
     }
 
     public void setIdRoles(List<Long> idRoles) {
-        this._idRoles = idRoles;
+        this.idRoles = idRoles;
     }
 }

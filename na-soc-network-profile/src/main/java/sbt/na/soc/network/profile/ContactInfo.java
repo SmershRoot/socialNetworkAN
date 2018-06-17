@@ -15,59 +15,59 @@ import java.util.Map;
 public class ContactInfo extends ProfileObject {
     private static final Logger LOGGER = LoggerFactory.getLogger(ContactInfo.class);
 
-    private String _city;
-    private String _contactPhone;
-    private String _webSite;
-    private Map<String,String> _otherContacts;
-    private ProfileBasic _profileBasicSub;
-    private List<FieldOfActivity> _fieldOfActivities;
+    private String city;
+    private String contactPhone;
+    private String webSite;
+    private Map<String,String> otherContacts;
+    private ProfileBasic profileBasicSub;
+    private List<FieldOfActivity> fieldOfActivities;
 
-    public List<FieldOfActivity> get_fieldOfActivities() {
-        return _fieldOfActivities;
+    public List<FieldOfActivity> getFieldOfActivities() {
+        return fieldOfActivities;
     }
 
-    public void set_fFieldOfActivities(List<FieldOfActivity> _fFieldOfActivities) {
-        this._fieldOfActivities = _fFieldOfActivities;
+    public void setFieldOfActivities(List<FieldOfActivity> fieldOfActivities) {
+        this.fieldOfActivities = fieldOfActivities;
     }
 
-    public String get_city() {
-        return _city;
+    public String getCity() {
+        return city;
     }
 
-    public void set_city(String _city) {
-        this._city = _city;
+    public void setCity(String _city) {
+        this.city = city;
     }
 
-    public String get_contactPhone() {
-        return _contactPhone;
+    public String getContactPhone() {
+        return contactPhone;
     }
 
-    public void set_contactPhone(String _contactPhone) {
-        this._contactPhone = _contactPhone;
+    public void setContactPhone(String _contactPhone) {
+        this.contactPhone = contactPhone;
     }
 
-    public String get_webSite() {
-        return _webSite;
+    public String getWebSite() {
+        return webSite;
     }
 
-    public void set_webSite(String _webSite) {
-        this._webSite = _webSite;
+    public void setWebSite(String _webSite) {
+        this.webSite = webSite;
     }
 
-    public Map<String, String> get_otherContacts() {
-        return _otherContacts;
+    public Map<String, String> getOtherContacts() {
+        return otherContacts;
     }
 
-    public void set_otherContacts(Map<String, String> _otherContacts) {
-        this._otherContacts = _otherContacts;
+    public void setOtherContacts(Map<String, String> _otherContacts) {
+        this.otherContacts = otherContacts;
     }
 
-    public ProfileBasic get_profileBasicSub() {
-        return _profileBasicSub;
+    public ProfileBasic getProfileBasicSub() {
+        return profileBasicSub;
     }
 
-    public void set_profileBasicSub(ProfileBasic _profileBasicSub) {
-        this._profileBasicSub = _profileBasicSub;
+    public void setProfileBasicSub(ProfileBasic profileBasicSub) {
+        this.profileBasicSub = profileBasicSub;
     }
 
     public ContactInfo() {

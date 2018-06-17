@@ -11,24 +11,27 @@ import org.slf4j.LoggerFactory;
 public class Role extends ProfileObject {
     private static final Logger LOGGER = LoggerFactory.getLogger(Role.class);
 
-    private Organization _organization;
-    private Long _idStatus; //Статус из заранее заданных. Директор и т.д.
+    public final static Long STATUS_CHIEF=1L;
+    public final static Long STATUS_WORKER=2L;
 
-    public Long get_idStatus() {
-        return _idStatus;
+    private Organization organization;
+    private Long idStatus; //Статус из заранее заданных. Директор и т.д.
+
+    public Long getIdStatus() {
+        return idStatus;
     }
 
-    public void set_idStatus(Long _idStatus) {
-        this._idStatus = _idStatus;
+    public void setIdStatus(Long _idStatus) {
+        this.idStatus = _idStatus;
     }
     // TODO Права еще должно содержать, но расширении модели идет уже большое. Реализация в случае продолжения работы по этому проекту
 
-    public Organization get_organization() {
-        return _organization;
+    public Organization getOrganization() {
+        return organization;
     }
 
-    public void set_organization(Organization _organization) {
-        this._organization = _organization;
+    public void setOrganization(Organization _organization) {
+        this.organization = _organization;
     }
 
     public Role() {
