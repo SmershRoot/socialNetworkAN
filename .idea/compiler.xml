@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="socNetAN" />
+        <module name="socNetProfileAN" />
+        <module name="socNetSearchAddFriendNA" />
       </profile>
     </annotationProcessing>
   </component>
