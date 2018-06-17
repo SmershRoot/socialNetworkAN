@@ -12,6 +12,7 @@
         <module>na-soc-network-profile</module>
         <module>na-soc-network-search-add-friend</module>
         <module>na-soc-network-communication</module>
+        <module>na-soc-network-tool</module>
     </modules>
 
 
