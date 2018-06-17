@@ -12,6 +12,16 @@ public class Role extends ProfileObject {
     private static final Logger LOGGER = LoggerFactory.getLogger(Role.class);
 
     private Organization _organization;
+    private Long _idStatus; //Статус из заранее заданных. Директор и т.д.
+
+    public Long get_idStatus() {
+        return _idStatus;
+    }
+
+    public void set_idStatus(Long _idStatus) {
+        this._idStatus = _idStatus;
+    }
+    // TODO Права еще должно содержать, но расширении модели идет уже большое. Реализация в случае продолжения работы по этому проекту
 
     public Organization get_organization() {
         return _organization;
