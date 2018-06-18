@@ -1,5 +1,5 @@
-sbt\na\socnetwork\photos\PhotoDelete.class
-sbt\na\socnetwork\photos\Photo.class
-sbt\na\socnetwork\photos\PhotoAdd.class
-sbt\na\socnetwork\photos\Album$accessLevels.class
-sbt\na\socnetwork\photos\Album.class
+ru\sbt\na\soc\network\photos\AlbumPhoto.class
+ru\sbt\na\soc\network\photos\IPhoto.class
+ru\sbt\na\soc\network\photos\Album$accessLevels.class
+ru\sbt\na\soc\network\photos\IAlbum.class
+ru\sbt\na\soc\network\photos\Album.class
