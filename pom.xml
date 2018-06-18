@@ -13,6 +13,7 @@
         <module>na-soc-network-search-add-friend</module>
         <module>na-soc-network-communication</module>
         <module>na-soc-network-tool</module>
+        <module>na-soc-network-photos</module>
     </modules>
 
 
