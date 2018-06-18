@@ -17,7 +17,7 @@ public class PrivateMessage implements Message {
        this.profileFrom=profileFrom;
        this.profileTo=profileTo;
        this.messageObject=messageObject;
-       //...
+       //....
     }
 
     public Long getId() {
