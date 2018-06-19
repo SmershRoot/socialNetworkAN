@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="na-soc-network-models" />
+        <module name="na-soc-network-news" />
         <module name="na-soc-network-photos" />
         <module name="socNetCommunicationNA" />
         <module name="socNetProfileAN" />
