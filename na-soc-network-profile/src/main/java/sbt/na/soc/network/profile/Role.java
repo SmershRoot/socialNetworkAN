@@ -3,6 +3,8 @@ package sbt.na.soc.network.profile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
+
 /**
  * Роль пользователя в организации.
  *
@@ -16,6 +18,8 @@ public class Role extends ProfileObject {
 
     private Organization organization;
     private Long idStatus; //Статус из заранее заданных. Директор и т.д.
+    private List<Privilege> privileges;
+
 
     public Long getIdStatus() {
         return idStatus;
@@ -44,5 +48,13 @@ public class Role extends ProfileObject {
 
     public Role(String name, String notes) {
         super(name, notes);
+    }
+
+    public List<Privilege> getPrivileges() {
+        return privileges;
+    }
+
+    public void setPrivileges(List<Privilege> privileges) {
+        this.privileges = privileges;
     }
 }

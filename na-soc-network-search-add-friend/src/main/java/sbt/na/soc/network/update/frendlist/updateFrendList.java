@@ -1,7 +1,7 @@
 package sbt.na.soc.network.update.frendlist;
 
 import sbt.na.soc.network.profile.ProfileBasic;
-import sbt.na.soc.network.communication.Message;
+import ru.sbt.na.soc.network.models.communication.Message;
 
 import java.util.ArrayList;
 import java.util.List;

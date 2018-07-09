@@ -1,4 +1,4 @@
-package sbt.na.soc.network.communication;
+package ru.sbt.na.soc.network.models.communication;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -121,11 +121,11 @@ public class GroupMessage implements Message {
         this.profileFrom=profileBasic;
     }
 
-    public List<ProfileBasic> get_profileTo() {
+    public List<ProfileBasic> getProfileTo() {
         return profilesTo;
     }
 
-    public void set_profileTo(List<ProfileBasic> _profileTo) {
-        this.profilesTo = _profileTo;
+    public void setProfileTo(List<ProfileBasic> profileTo) {
+        this.profilesTo = profileTo;
     }
 }

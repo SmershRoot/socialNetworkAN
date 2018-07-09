@@ -10,6 +10,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>na-soc-network-models</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>ru.sbt.na.soc.network</groupId>
+            <artifactId>na-soc-network-profile</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 
 </project>

@@ -1,4 +1,4 @@
-package sbt.na.soc.network.communication;
+package ru.sbt.na.soc.network.models.communication;
 
 import sbt.na.soc.network.profile.ProfileBasic;
 
