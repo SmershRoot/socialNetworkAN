@@ -6,7 +6,7 @@ import ru.sbt.na.soc.network.models.communication.Message;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface updateFrendList {
+public interface UpdateFrendList {
 
     String checkAdd(ProfileBasic profileInitiator, ProfileBasic profile);
 

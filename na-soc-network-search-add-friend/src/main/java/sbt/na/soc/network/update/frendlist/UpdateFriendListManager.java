@@ -11,12 +11,12 @@ import sbt.na.soc.network.profile.ProfileBasic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class updateFrendListManager implements updateFrendList {
+public class UpdateFriendListManager implements UpdateFrendList {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProfileBasic.class);
 
     private List<String> errorMessage;
 
-    public updateFrendListManager() {
+    public UpdateFriendListManager() {
         this.errorMessage=new ArrayList<>();
     }
 
@@ -50,4 +50,9 @@ public class updateFrendListManager implements updateFrendList {
 
         return false;
     }
+
+    public List<String> getErrorMessage(){
+        return errorMessage;
+    }
 }
+

@@ -21,4 +21,6 @@ public class Privilege extends ProfileObject implements Serializable {
     public void setObjectId(long objectId) {
         this.objectId = objectId;
     }
+
+
 }

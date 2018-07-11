@@ -13,6 +13,12 @@ public class ProfileManager implements ProfileManagerInterface {
         return null;
     }
 
+    public ProfileBasic getProfileById(long id) throws Exception {
+        try(Connection connection=null) {
+            return getProfileById(id, connection);
+        }
+    }
+
     public ProfileBasic getProfileByLogin(String login, Connection conn) throws Exception {
         return null;
     }
@@ -68,4 +74,6 @@ public class ProfileManager implements ProfileManagerInterface {
     public List<Long> getStatusesForOrganization(Organization org, Connection conn) throws Exception {
         return null;
     }
+
+
 }

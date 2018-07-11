@@ -57,4 +57,6 @@ public class Role extends ProfileObject {
     public void setPrivileges(List<Privilege> privileges) {
         this.privileges = privileges;
     }
+
+
 }
