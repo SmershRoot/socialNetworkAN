@@ -6,6 +6,13 @@ public class Privilege extends ProfileObject implements Serializable {
     private int category;
     private long objectId;
 
+    public Privilege(){ super(); }
+
+    public Privilege(long id, String name, String notes, int category) {
+        super(id, name, notes);
+        this.category = category;
+    }
+
     public int getCategory() {
         return category;
     }

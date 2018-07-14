@@ -25,7 +25,7 @@ public class UpdateFriendListManager implements UpdateFrendList {
         return null;
     }
 
-    @Override
+    @Override /**/
     public boolean add(ProfileBasic profileInitiator, ProfileBasic profile) {
         return false;
     }
@@ -35,12 +35,12 @@ public class UpdateFriendListManager implements UpdateFrendList {
 
     }
 
-    @Override
+    @Override /**/
     public void remove(ProfileBasic profileInitiator, List<ProfileBasic> profiles) {
 
     }
 
-    @Override
+    @Override /**/
     public boolean add(ProfileBasic profileInitiator, ProfileBasic profile, Message message) {
         if(message instanceof GroupMessage){
             errorMessage.add(ConstantsGeneral.ERROR_ADD_FREND_MESSAGE_GROUP);

@@ -10,13 +10,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 class ProfileManagerTestJUnit5 {
-    private ProfileManager profileManager;
-
-    @BeforeAll
-    void beforeTestAll(){
-        profileManager = new ProfileManager();
-    }
-
 
     @BeforeEach
     void TestConnection() throws SQLException{
@@ -29,8 +22,9 @@ class ProfileManagerTestJUnit5 {
     @DisplayName("Общий класс тестирования Класса")
     void TestAll() throws Exception {
         try(Connection connection=null) {
+            ProfileManager profileManager = new ProfileManager();
             List<ProfileBasic> profileBasics = profileManager.getProfiles(connection);
-            Assertions.assertNull(profileBasics,"Не удалось получить ни одного Профиля");
+            Assertions.assertNotNull(profileBasics,"Не удалось получить ни одного Профиля");
             Assertions.assertTrue(profileBasics.size()>0,"Не удалось получить ни одного Профиля");
 
             ProfileBasic profileBasic = profileBasics.get(0);
@@ -53,6 +47,7 @@ class ProfileManagerTestJUnit5 {
     }
 
     private void saveUser(ProfileBasic profileBasic) {
+        ProfileManager profileManager = new ProfileManager();
         Throwable thrown = Assertions.assertThrows(Exception.class, () -> {
             profileManager.saveUser(profileBasic,null,null);
         });

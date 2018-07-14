@@ -11,6 +11,7 @@ import java.util.Map;
  *
  * @author Scherbakov_A_A
  */
+
 public class ProfileBasic extends ProfileObject {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProfileBasic.class);
 
@@ -49,8 +50,8 @@ public class ProfileBasic extends ProfileObject {
         return login;
     }
 
-    public void setLogin(String _login) {
-        this.login = _login;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public List<Organization> getOrganizations() {
